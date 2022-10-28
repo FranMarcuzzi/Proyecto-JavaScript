@@ -23,7 +23,10 @@ function cargaNotas(){
     let promedio = suma / n;
     promedio = promedio.toFixed(2);
     let mensaje = condicion(promedio);
-    alert(`El alumno ${alumno} tiene un promedio de ${promedio} \n\nPor lo cual esta en condicion de ${mensaje}`);
+    document.getElementById("titulo").innerHTML = `El alumno ${alumno} tiene un promedio de ${promedio} <br>Por lo cual esta en condicion de ${mensaje}`
+    document.getElementById("titulo").style.fontSize= '25px';
+    document.getElementById("titulo").style.width= '90ch';
+    
     
 }
 // CONDICION DE SEGUN NOTA
